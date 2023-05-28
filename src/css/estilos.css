@@ -1,0 +1,144 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: #1C1A24;
+    color: #f5f5f5;
+}
+
+body.modo-claro {
+    background-color: #818181;
+    color: #333333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    align-items: center;
+}
+
+header .logo {
+    width: 70px;
+    transition: 0.2s ease-in-out;
+}
+
+header .imagem-botao {
+    width: 35px;
+    transition: 0.2s ease-in-out;
+}
+
+header #botao-alterar-tema {
+    background: none;
+    border: none;
+}
+
+header .logo:hover,
+header .imagem-botao:hover,
+main .cartao-skins:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+main {
+    padding: 25px;
+}
+
+main .listagem-skins {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+main .cartao-skins {
+    background-color: #312e3d;
+    width: 275px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    border-radius: 15px;
+}
+
+main .cartao-skins:hover {
+    background-color: #555161;
+    transition: 0.2s ease-in-out;
+}
+
+.modo-claro .cartao-skins {
+    background-color: #a5a5a5;
+}
+
+.modo-claro .cartao-skins:hover {
+    background-color: #bdbdbd;
+}
+
+main .cartao-skins .informacoes {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    border: 1px solid #a3a0af;
+    border-radius: 10px;
+}
+
+.modo-claro .cartao-skins .informacoes {
+    border: 1px solid #333333;
+}
+
+main .cartao-skins .informacoes span {
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+main .cartao-skins .png {
+    max-width: 150px;
+    max-height: 150px;
+}
+
+main .cartao-skins .tags {
+    display: flex;
+    gap: 15px;
+    font-size: 14px;
+}
+
+main .cartao-skins .exterior,
+main .cartao-skins .raridade {
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.exterior {
+    background-color: #6c7a5a;
+}
+
+.oculto {
+    background-color: #DF4B45;
+}
+
+.restrito {
+    background-color: #763590;
+}
+
+.nivel-industrial {
+    background-color: #2E80DA;
+}
+
+.distinto {
+    background-color: #4167F2;
+}
+
+.nivel-basico {
+    background-color: #91C3CE;
+}
+
+main .descricao {
+    max-height: 80px;
+    max-width: 210px;
+    overflow-y: scroll;
+    font-size: 14px;
+    padding-right: 10px;
+}
